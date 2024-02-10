@@ -15,16 +15,18 @@ useradd -G backofthehouse sompong
 useradd -G backofthehouse sommhai
 useradd -G backofthehouse somying
 
-mkdir /home/frontofthehouse
-mkdir /home/backofthehouse
-mkdir /home/management
+mkdir /frontofthehouse/menus
+touch /frontofthehouse/menus/chicken_wonton.txt
+touch /frontofthehouse/menus/spicy_wonton.txt
+touch /frontofthehouse/menus/crispy_wonton.txt
 
-mkdir /home/frontofthehouse/menus
-touch /home/frontofthehouse/menus/chicken_wonton.txt
-touch /home/frontofthehouse/menus/spicy_wonton.txt
-touch /home/frontofthehouse/menus/crispy_wonton.txt
+mkdir /backofthehouse/recipes
+touch /backofthehouse/recipes/chicken_wonton_manual.pdf
+touch /backofthehouse/recipes/spicy_wonton_manual.pdf
+touch /backofthehouse/recipes/crispy_wonton_manual.pdf
 
-#mkdir /home/recipes
-#touch /home/recipes/chicken_wonton_manual.pdf
-#touch /home/recipes/spicy_wonton_manual.pdf
-#touch /home/recipes/crispy_wonton_manual.pdf
+chown :frontofthehouse /frontofthehouse
+chmod 770 /frontofthehouse
+
+chown :backofthehouse /backofthehouse
+chmod 770 /backofthehouse
