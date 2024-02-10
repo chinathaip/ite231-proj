@@ -15,11 +15,13 @@ useradd -G backofthehouse sompong
 useradd -G backofthehouse sommhai
 useradd -G backofthehouse somying
 
+mkdir /frontofthehouse
 mkdir /frontofthehouse/menus
 touch /frontofthehouse/menus/chicken_wonton.txt
 touch /frontofthehouse/menus/spicy_wonton.txt
 touch /frontofthehouse/menus/crispy_wonton.txt
 
+mkdir /backofthehouse
 mkdir /backofthehouse/recipes
 touch /backofthehouse/recipes/chicken_wonton_manual.pdf
 touch /backofthehouse/recipes/spicy_wonton_manual.pdf
@@ -37,14 +39,14 @@ useradd -G management watsamon
 useradd -G management krittawit
 useradd -G management phachathakorn 
 useradd -G management karnsiree
-
-mkdir storage 
-mkdir employee 
-mkdir transaction
-touch storage/rawchicken.csv
-touch storage/vegetables.csv
-touch stoage/sauces.csv
-touch employee/employee_list.txt
-touch transaction/20230210.csv
-touch transaction/20230209.csv
-touch transaction/20230208.csv
+#
+#mkdir storage 
+#mkdir employee 
+#mkdir transaction
+#touch storage/rawchicken.csv
+#touch storage/vegetables.csv
+#touch stoage/sauces.csv
+#touch employee/employee_list.txt
+#touch transaction/20230210.csv
+#touch transaction/20230209.csv
+#touch transaction/20230208.csv
