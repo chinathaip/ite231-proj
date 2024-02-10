@@ -30,3 +30,21 @@ chmod 770 /frontofthehouse
 
 chown :backofthehouse /backofthehouse
 chmod 770 /backofthehouse
+
+groupadd management
+useradd -G management chinathai
+useradd -G management watsamon
+useradd -G management krittawit
+useradd -G management phachathakorn 
+useradd -G management karnsiree
+
+mkdir storage 
+mkdir employee 
+mkdir transaction
+touch storage/rawchicken.csv
+touch storage/vegetables.csv
+touch stoage/sauces.csv
+touch employee/employee_list.txt
+touch transaction/20230210.csv
+touch transaction/20230209.csv
+touch transaction/20230208.csv
