@@ -12,6 +12,5 @@ echo <?php echo "Hello , world! This is PHP running on Apache!" ?> >> /var/www/t
 #Start Apache2 service
 /etc/init.d/apache2 restart
 
-apt install net-tools
 
 
