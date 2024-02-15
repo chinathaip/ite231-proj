@@ -7,7 +7,7 @@ apt-get install apache2 --yes
 apt-get install php libapache2-mod-php php-mysql
 
 #Create test.php file
-echo <?php echo "Hello , world! This is PHP running on Apache!" ?> >> /var/www/test.php
+echo <?php echo "Hello , world! This is PHP running on Apache!" ?> >> /var/www/html/test.php
 
 #Start Apache2 service
 /etc/init.d/apache2 restart
